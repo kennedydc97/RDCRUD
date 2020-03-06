@@ -1,13 +1,12 @@
-<!-- <nav>
+<nav>
     <ul>
-        <li><a href="#" routerLink="/">Home</a></li>
-        <li><a href="#" routerLink="/about">About</a></li>
-        <li><a href="#" routerLink="/contactus">Contact Us</a></li>
+        <li routerLinkActive="destaque" *ngFor="let item of itens">
+            <a routerLink="{{item.route}}">{{item.label}}</a>
+        </li>
     </ul>
-</nav> -->
+</nav>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-primary mb-3">
-    <!-- <a class="navbar-brand" href="" routerLink="/"><img src="../../../assets/logo.png" alt=""></a> -->
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-primary mb-3">
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
@@ -21,4 +20,4 @@
             </li>
         </ul>
     </div>
-</nav>
+</nav> -->

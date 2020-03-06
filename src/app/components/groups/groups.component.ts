@@ -12,9 +12,13 @@ export class GroupsComponent implements OnInit {
   public groups: Group[] = []
   @Output() clickedGroup = new EventEmitter();
 
+  private allGroups: Group = new Group(0, "TODOS");
+
   constructor(private http: HttpService) {
 
-    this.http.getGroup().subscribe((data) => { this.groups = data });
+
+    this.http.getGroup().subscribe((data) => { this.groups = [this.allGroups, ...data] });
+    
 
   }
   
