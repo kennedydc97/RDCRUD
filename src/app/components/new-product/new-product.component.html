@@ -1,0 +1,9 @@
+<form [formGroup]="formProduct" (ngSubmit)="sendProduct()">
+    <label>Novo produto:</label>
+    <input type="text" formControlName="cod" placeholder="Digite o código">
+    <input type="text" formControlName="desc" placeholder="Digite a descrição">
+    <input type="text" formControlName="regAnvisa" placeholder="Digite o registro da anvisa">
+    <input type="checkbox" formControlName="controlado">Controlado
+    <input type="text" formControlName="codGrupo" placeholder="Digite o código do grupo">
+    <button type="submit">cadastrar</button>
+</form>

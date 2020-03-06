@@ -3,7 +3,6 @@ import { Component, OnInit } from '@angular/core';
 interface iItem {
   label: string;
   route: string;
-  ativo: boolean;
 }
 
 @Component({
@@ -15,20 +14,21 @@ export class NavComponent implements OnInit {
 
   itens: iItem[]=[
     {
-      ativo: true,
       label: "home",
       route: "/home"
     },
     {
-      ativo: false,
       label: "about",
       route: "/about"
     },
     {
-      ativo: false,
       label: "contactUs",
       route: "/contactus"
     },
+    {
+      label: "registerProduct",
+      route: "/new-product"
+    }
   ]
 
   constructor() { }

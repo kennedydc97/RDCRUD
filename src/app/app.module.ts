@@ -11,6 +11,8 @@ import { GroupsComponent } from './components/groups/groups.component';
 import { ProductListComponent } from './components/product-list/product-list.component'
 import { HttpClientModule } from '@angular/common/http';
 import { ProductComponent } from './components/product/product.component';
+import { NewProductComponent } from './components/new-product/new-product.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -22,12 +24,14 @@ import { ProductComponent } from './components/product/product.component';
     ContactusComponent,
     GroupsComponent,
     ProductListComponent,
-    ProductComponent
+    ProductComponent,
+    NewProductComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [
   ],
